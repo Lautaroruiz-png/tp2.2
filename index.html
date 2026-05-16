@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+
+<!-- TÍTULO DE LA PÁGINA -->
+<title>Burger House</title>
+
+<style>
+
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #d62828;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    background-color: #fcbf49;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+/* ESPECIAL */
+.especial {
+    background-color: #fff3cd;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.especial img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.especial-texto {
+    max-width: 400px;
+}
+
+.especial h2 {
+    color: #d62828;
+    font-size: 35px;
+}
+
+.btn {
+    background-color: #d62828;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* MENU */
+.menu {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+}
+
+.price {
+    color: #d62828;
+    font-weight: bold;
+}
+
+/* FAQ */
+.faq {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    max-width: 700px;
+    margin: 10px auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 15px 15px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ENCABEZADO PRINCIPAL -->
+<header>
+    <h1>🍔 Burger House</h1>
+
+    <!-- PÁRRAFO EXPLICATIVO -->
+    <p>
+        En Burger House ofrecemos hamburguesas artesanales con ingredientes frescos,
+        carne de calidad y el mejor sabor de Tucumán.
+    </p>
+</header>
+
+<!-- MENÚ DE NAVEGACIÓN -->
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Menú</a>
+    <a href="#">Especial</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<!-- SECCIÓN PRINCIPAL -->
+<section class="hero">
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <h1>Las mejores hamburguesas 🔥</h1>
+
+    <!-- PÁRRAFO EXPLICATIVO -->
+    <p>
+        Probá nuestras hamburguesas hechas a la parrilla con ingredientes frescos
+        y recetas únicas.
+    </p>
+
+</section>
+
+<!-- ESPECIALIDAD DE LA CASA -->
+<section class="especial">
+
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+
+    <div class="especial-texto">
+
+        <!-- ENCABEZADO -->
+        <h2>🍔 Hamburguesa Emma</h2>
+
+        <!-- PÁRRAFO -->
+        <p>
+            Nuestra especialidad de la casa: doble carne jugosa,
+            queso cheddar, panceta crocante y salsa secreta.
+        </p>
+
+        <p class="price">$4000</p>
+
+        <button class="btn">Probar ahora</button>
+
+    </div>
+</section>
+
+<!-- SECCIÓN MENÚ -->
+<section class="menu">
+
+    <!-- ENCABEZADO -->
+    <h2>Nuestro Menú</h2>
+
+    <!-- TARJETAS DEL MENÚ -->
+    <div class="cards">
+
+        <!-- HAMBURGUESA DOBLE -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1606755962773-d324e2a13086">
+
+            <h3>Doble</h3>
+
+            <p>Doble carne y cheddar</p>
+
+            <p class="price">$3200</p>
+
+        </div>
+
+        <!-- HAMBURGUESA COMPLETA -->
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05">
+
+            <h3>Completa</h3>
+
+            <p>Con huevo, jamón y queso</p>
+
+            <p class="price">$3500</p>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES -->
+<section class="faq">
+
+    <h2>¿Necesitas alguna razón más?</h2>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿Qué medios de pago aceptamos?
+        </button>
+
+        <div class="faq-answer">
+            Efectivo, tarjetas y transferencias
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿Cómo cancelar mi pedido?
+        </button>
+
+        <div class="faq-answer">
+            Podés cancelarlo antes de que salga a reparto
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Seguimiento del pedido
+        </button>
+
+        <div class="faq-answer">
+            Te avisamos cuando esté en camino
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Mi pedido no llegó
+        </button>
+
+        <div class="faq-answer">
+            Contactanos y lo resolvemos rápido
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PIE DE PÁGINA -->
+<footer>
+
+    <p>© 2026 Burger House - Tucumán</p>
+
+</footer>
+
+<!-- SCRIPT FAQ -->
+<script>
+
+/* SELECCIONA TODAS LAS PREGUNTAS */
+const preguntas = document.querySelectorAll(".faq-question");
+
+/* ABRE Y CIERRA LAS RESPUESTAS */
+preguntas.forEach(p => {
+
+    p.addEventListener("click", () => {
+
+        const respuesta = p.nextElementSibling;
+
+        respuesta.style.display =
+            respuesta.style.display === "block"
+            ? "none"
+            : "block";
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
