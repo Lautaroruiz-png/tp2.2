@@ -13,6 +13,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
 /* HEADER */
@@ -65,6 +66,7 @@ nav a {
 .especial img {
     width: 300px;
     border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 .especial-texto {
@@ -84,6 +86,7 @@ nav a {
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 /* MENU */
@@ -118,7 +121,7 @@ nav a {
 
 /* FAQ */
 .faq {
-    background-color: #f5f5f5;
+    background-color: white;
     padding: 50px 20px;
 }
 
@@ -150,12 +153,50 @@ nav a {
     padding: 0 15px 15px;
 }
 
+/* RESEÑAS */
+.resenas {
+    background-color: #fff3cd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.resenas h2 {
+    color: #d62828;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.form-resena {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-resena input,
+.form-resena textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-resena textarea {
+    height: 120px;
+    resize: none;
+}
+
 /* FOOTER */
 footer {
     background-color: #222;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
 }
 
 </style>
@@ -163,32 +204,33 @@ footer {
 
 <body>
 
-<!-- ENCABEZADO PRINCIPAL -->
+<!-- ENCABEZADO -->
 <header>
+
     <h1>🍔 Burger House</h1>
 
-    <!-- PÁRRAFO EXPLICATIVO -->
     <p>
         En Burger House ofrecemos hamburguesas artesanales con ingredientes frescos,
         carne de calidad y el mejor sabor de Tucumán.
     </p>
+
 </header>
 
-<!-- MENÚ DE NAVEGACIÓN -->
+<!-- MENÚ -->
 <nav>
+
     <a href="#">Inicio</a>
     <a href="#">Menú</a>
     <a href="#">Especial</a>
     <a href="#">Contacto</a>
+
 </nav>
 
-<!-- SECCIÓN PRINCIPAL -->
+<!-- HERO -->
 <section class="hero">
 
-    <!-- ENCABEZADO PRINCIPAL -->
     <h1>Las mejores hamburguesas 🔥</h1>
 
-    <!-- PÁRRAFO EXPLICATIVO -->
     <p>
         Probá nuestras hamburguesas hechas a la parrilla con ingredientes frescos
         y recetas únicas.
@@ -196,17 +238,15 @@ footer {
 
 </section>
 
-<!-- ESPECIALIDAD DE LA CASA -->
+<!-- ESPECIALIDAD -->
 <section class="especial">
 
-    <img src="WhatsApp Image 2026-05-06 at 6.57.09 PM.jpeg">
+    <img src="WhatsApp Image 2026-05-06 at 6.57.09 PM.jpeg" alt="Hamburguesa Emma">
 
     <div class="especial-texto">
 
-        <!-- ENCABEZADO -->
         <h2>🍔 Hamburguesa Emma</h2>
 
-        <!-- PÁRRAFO -->
         <p>
             Nuestra especialidad de la casa: doble carne jugosa,
             queso cheddar, panceta crocante y salsa secreta.
@@ -217,21 +257,20 @@ footer {
         <button class="btn">Probar ahora</button>
 
     </div>
+
 </section>
 
-<!-- SECCIÓN MENÚ -->
+<!-- MENÚ -->
 <section class="menu">
 
-    <!-- ENCABEZADO -->
     <h2>Nuestro Menú</h2>
 
-    <!-- TARJETAS DEL MENÚ -->
     <div class="cards">
 
         <!-- HAMBURGUESA DOBLE -->
         <div class="card">
 
-            <img src="images.jfif">
+            <img src="images.jfif" alt="Hamburguesa Doble">
 
             <h3>Doble</h3>
 
@@ -244,7 +283,7 @@ footer {
         <!-- HAMBURGUESA COMPLETA -->
         <div class="card">
 
-            <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05">
+            <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05" alt="Hamburguesa Completa">
 
             <h3>Completa</h3>
 
@@ -255,9 +294,10 @@ footer {
         </div>
 
     </div>
+
 </section>
 
-<!-- PREGUNTAS FRECUENTES -->
+<!-- FAQ -->
 <section class="faq">
 
     <h2>¿Necesitas alguna razón más?</h2>
@@ -269,7 +309,7 @@ footer {
         </button>
 
         <div class="faq-answer">
-            Efectivo, tarjetas y transferencias
+            Efectivo, tarjetas y transferencias.
         </div>
 
     </div>
@@ -281,7 +321,7 @@ footer {
         </button>
 
         <div class="faq-answer">
-            Podés cancelarlo antes de que salga a reparto
+            Podés cancelarlo antes de que salga a reparto.
         </div>
 
     </div>
@@ -293,7 +333,7 @@ footer {
         </button>
 
         <div class="faq-answer">
-            Te avisamos cuando esté en camino
+            Te avisamos cuando esté en camino.
         </div>
 
     </div>
@@ -305,15 +345,48 @@ footer {
         </button>
 
         <div class="faq-answer">
-            Contactanos y lo resolvemos rápido
+            Contactanos y lo resolvemos rápido.
         </div>
 
     </div>
 
 </section>
 
-<!-- PIE DE PÁGINA -->
+<!-- RESEÑAS -->
+<section class="resenas">
+
+    <h2>⭐ Dejanos tu reseña</h2>
+
+    <p>
+        Queremos conocer tu opinión sobre nuestras hamburguesas.
+    </p>
+
+    <form class="form-resena">
+
+        <input type="text" placeholder="Tu nombre" required>
+
+        <textarea placeholder="Escribí tu reseña..." required></textarea>
+
+        <button type="submit" class="btn">
+            Enviar reseña
+        </button>
+
+    </form>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
+
+    <h2>📞 Contactanos</h2>
+
+    <p>📱 Teléfono: +54 381 555-1234</p>
+
+    <p>📸 Instagram: @burgerhouse.ok</p>
+
+    <p>👍 Facebook: Burger House Oficial</p>
+
+    <p>🎵 TikTok: @burgerhouse.ok</p>
 
     <p>© 2026 Burger House - Tucumán</p>
 
